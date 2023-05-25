@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private bool isGamePaused = false;
+    public GameObject CanvasPause;
 
     private void Update()
     {
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+
     }
 
     private void TogglePause()
@@ -31,11 +34,14 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             Debug.Log("Juego pausado");
+            CanvasPause.SetActive(true);
         }
         else
         {
             Time.timeScale = 1f;
             Debug.Log("Juego reanudado");
+            CanvasPause.SetActive(false);
+
         }
     }
 }

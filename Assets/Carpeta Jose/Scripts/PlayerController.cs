@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
     //Para mostrar los puntos en el canvas
     public TextMeshProUGUI puntosText;
+    public TextMeshProUGUI puntosFinalGO;
+    public TextMeshProUGUI puntosFinalWin;
 
     void Start()
     {
@@ -76,7 +78,10 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             puntos++;
-            puntosText.text = "Score: " + puntos.ToString();
+            puntosText.text = puntos.ToString();
+            puntosFinalGO.text = puntos.ToString();
+            puntosFinalWin.text = puntos.ToString();
+
         }
     }
 }
