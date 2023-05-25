@@ -1310,7 +1310,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.87886393, g: 0.7277, b: 0.95, a: 1}
+  m_Color: {r: 0.96862745, g: 0.5764706, b: 1, a: 1}
   m_Origin: {x: -19, y: -8, z: 0}
   m_Size: {x: 19, y: 24, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -1401,7 +1401,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!66 &3023390689619674756
 CompositeCollider2D:
   m_ObjectHideFlags: 0
