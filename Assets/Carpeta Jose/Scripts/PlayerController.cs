@@ -12,10 +12,10 @@ public class PlayerController : MonoBehaviour
 
     //Mover al jugador
     private Vector2 direccion;
-    public float speed = 6;
+    public float speed = 5f;
 
     //Hacer saltar al jugador
-    private float fuerzaSalto = 6f;
+    public float fuerzaSalto = 4f;
     private bool puedeSaltar;
 
     //Contar los puntos

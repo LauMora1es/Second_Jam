@@ -14,6 +14,8 @@ public class PlayerEliminated : MonoBehaviour
 
     private Camera cammain;
 
+    public GameObject elinimatedCanvas;
+    
     private void Start()
     {
         cammain = Camera.main;
@@ -23,6 +25,7 @@ public class PlayerEliminated : MonoBehaviour
         if (!IsVisibleFromCamera())
         {
             Destroy(gameObject);
+            elinimatedCanvas.SetActive(true);
         }
     }
     private bool IsVisibleFromCamera()

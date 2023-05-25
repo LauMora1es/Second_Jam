@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
             RestartScene();
         }
     }
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     private void TogglePause()
     {
@@ -33,10 +37,5 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             Debug.Log("Juego reanudado");
         }
-    }
-
-    private void RestartScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
