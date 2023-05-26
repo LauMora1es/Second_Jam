@@ -9,6 +9,7 @@ public class GroundPlayerWins : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Destroy(other.gameObject);
             winCanvas.SetActive(true);
         }
     }
