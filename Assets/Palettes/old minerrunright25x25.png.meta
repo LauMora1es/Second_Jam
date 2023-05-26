@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 815fc85318c053544a660c9b5260b24b
+guid: 3916fec49a2bd0a4b88f6ef38f073b21
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_jumping_top_falling-Sheet_0
+      name: old minerrunright25x25_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 8
-        height: 16
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63cb106315ae64f46a81c0bcfe6fe5ac
-      internalID: 746975278
+      spriteID: 297fb986fdd22fc4689904491a4ac1cc
+      internalID: 961513194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_jumping_top_falling-Sheet_1
+      name: old minerrunright25x25_1
       rect:
         serializedVersion: 2
-        x: 20
+        x: 25
         y: 0
-        width: 9
-        height: 16
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acee9d4e1df17104981a144f9a63f5e2
-      internalID: 900193231
+      spriteID: eebc68b28499f7b4aafd60b4f4e8a6c1
+      internalID: -1152986573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_jumping_top_falling-Sheet_2
+      name: old minerrunright25x25_2
       rect:
         serializedVersion: 2
-        x: 35
+        x: 50
         y: 0
-        width: 11
-        height: 16
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a3c6a4ccf2fdf48bc672f18fe9650d
-      internalID: -1253318798
+      spriteID: d6c898ef1c58b284d9043884a0c944f8
+      internalID: 1399212731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: old minerrunright25x25_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4754aa93a2dbeb41a15f11eebdc4787
+      internalID: -1471060345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: old minerrunright25x25_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6763d78711db343a96757be004dc22
+      internalID: 1630624944
       vertices: []
       indices: 
       edges: []
@@ -190,9 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_jumping_top_falling-Sheet_0: 746975278
-      player_jumping_top_falling-Sheet_1: 900193231
-      player_jumping_top_falling-Sheet_2: -1253318798
+      old minerrunright25x25_0: 961513194
+      old minerrunright25x25_1: -1152986573
+      old minerrunright25x25_2: 1399212731
+      old minerrunright25x25_3: -1471060345
+      old minerrunright25x25_4: 1630624944
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
