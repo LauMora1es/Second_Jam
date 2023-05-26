@@ -8,6 +8,15 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    //Contar los puntos
+    private int puntos = 0;
+
+    private AudioSource sonidoJugador;
+
+    public AudioClip sonidoSalto;
+    public AudioClip sonidoOro;
+
+
     private Rigidbody2D rb;
     private Animator Animator;
 
@@ -31,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        sonidoJugador = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -55,6 +65,7 @@ public class PlayerController : MonoBehaviour
             Input.GetKeyDown(KeyCode.Space)) && puedeSaltar)
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+            sonidoJugador.PlayOneShot(sonidoSalto, 1.0f);
         }
     }
     //Si esta tocando algun objeto, podrá saltar
@@ -87,13 +98,12 @@ public class PlayerController : MonoBehaviour
         //Para el canvas Score:
         if (other.gameObject.CompareTag("CollectableOre"))
         {
-            //Instanciar myData
-            MyData myData = ScriptableObject.CreateInstance<MyData>();
+            sonidoJugador.PlayOneShot(sonidoOro, 6.0f);
             Destroy(other.gameObject);
-            myData.pointAccumulator();
-            puntosText.text = myData.getPoint().ToString();
-            puntosFinalGO.text = myData.getPoint().ToString();
-            puntosFinalWin.text = myData.getPoint().ToString();
+            puntos++;
+            puntosText.text = puntos.ToString();
+            puntosFinalGO.text = puntos.ToString();
+            puntosFinalWin.text = puntos.ToString();
 
         }
     }

@@ -3057,6 +3057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1852f8623083bd0458fb385fc110a4dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasPause: {fileID: 0}
 --- !u!4 &1882529742
 Transform:
   m_ObjectHideFlags: 0
@@ -3615,6 +3616,14 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6324122886650042777, guid: 8a4759d57c422d34cb1874b26f9cebf5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324122886650042777, guid: 8a4759d57c422d34cb1874b26f9cebf5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324122886650042777, guid: 8a4759d57c422d34cb1874b26f9cebf5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.19
       objectReference: {fileID: 0}
@@ -3721,6 +3730,8 @@ MonoBehaviour:
   speed: 2
   fuerzaSalto: 4
   puntosText: {fileID: 357192920}
+  puntosFinalGO: {fileID: 0}
+  puntosFinalWin: {fileID: 0}
 --- !u!1001 &2071850955
 PrefabInstance:
   m_ObjectHideFlags: 0
