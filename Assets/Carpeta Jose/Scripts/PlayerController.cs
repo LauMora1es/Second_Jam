@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
     public float fuerzaSalto = 4f;
     private bool puedeSaltar;
 
-    //Contar los puntos
-    private int puntos = 0;
+    //Traer los puntos de myData
+    private MyData myData;
 
     //Para mostrar los puntos en el canvas
     public TextMeshProUGUI puntosText;
@@ -76,12 +76,15 @@ public class PlayerController : MonoBehaviour
         //Para el canvas Score:
         if (other.gameObject.CompareTag("CollectableOre"))
         {
+            //Instanciar myData
+            MyData myData = ScriptableObject.CreateInstance<MyData>();
             Destroy(other.gameObject);
-            puntos++;
-            puntosText.text = puntos.ToString();
-            puntosFinalGO.text = puntos.ToString();
-            puntosFinalWin.text = puntos.ToString();
+            myData.pointAccumulator();
+            puntosText.text = myData.getPoint().ToString();
+            puntosFinalGO.text = myData.getPoint().ToString();
+            puntosFinalWin.text = myData.getPoint().ToString();
 
         }
     }
+
 }

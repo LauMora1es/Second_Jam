@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private bool isGamePaused = false;
     public GameObject CanvasPause;
+    private MyData myData;
 
     private void Update()
     {
@@ -23,7 +24,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
-
     }
 
     private void TogglePause()
@@ -44,4 +44,5 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
 }
