@@ -9,6 +9,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator Animator;
 
     //Mover al jugador
     private Vector2 direccion;
@@ -29,12 +30,22 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Animator = GetComponent<Animator>();
     }
     void Update()
     {
         //Mover al jugador
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
+
+        //darse la vuelta a la izquierda
+        if (x < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else if (x > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+
+        //le dice al animator cuando cambiar de estado running/jumping
+        Animator.SetBool("running", x != 0.0f);
+        Animator.SetBool("jumping", y != 0.0f);
+
 
         direccion = new Vector2(x, y);
         rb.velocity = new Vector2(direccion.x * speed, rb.velocity.y);
