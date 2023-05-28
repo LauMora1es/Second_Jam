@@ -108,4 +108,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public int getPoints()
+    {
+        return puntos;
+    }
+
 }

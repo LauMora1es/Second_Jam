@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void startGame()
+    {
+        SceneManager.LoadScene("Juego UI-002");
+        //Time.timeScale = 1f;
+    }
+
     private void TogglePause()
     {
         isGamePaused = !isGamePaused;
