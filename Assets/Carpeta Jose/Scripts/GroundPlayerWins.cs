@@ -9,15 +9,22 @@ public class GroundPlayerWins : MonoBehaviour
     public GameObject winCanvas03;
     private PlayerController points;
 
+    public GameObject cameraControllerObject;
+    private CameraController cameraController;
+
+    private void Start()
+    {
+        cameraController = cameraControllerObject.GetComponent<CameraController>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(other.gameObject);
-            points = GetComponent<PlayerController>();
-
+            points = FindObjectOfType<PlayerController>();
+            cameraController.speed = 0f;
+            Debug.Log(points.getPoints());
             if (points.getPoints() <= 5)
             {
                 winCanvas01.SetActive(true);
@@ -25,12 +32,12 @@ public class GroundPlayerWins : MonoBehaviour
             else if (points.getPoints() > 5 && points.getPoints() <= 12)
             {
                 winCanvas02.SetActive(true);
+                Debug.Log("Si llegó");
             }
             else if (points.getPoints() > 12 && points.getPoints() <= 16)
             {
                 winCanvas03.SetActive(true);
             }
-
         }
     }
 }

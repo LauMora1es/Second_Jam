@@ -8,6 +8,8 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem particulas;
+
     //Contar los puntos
     private int puntos = 0;
 
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
         direccion = new Vector2(x, y);
         rb.velocity = new Vector2(direccion.x * speed, rb.velocity.y);
+        
 
         //Hacer saltar al jugador
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) ||
@@ -66,6 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
             sonidoJugador.PlayOneShot(sonidoSalto, 1.0f);
+            particulas.Play();
         }
     }
     //Si esta tocando algun objeto, podrá saltar
@@ -104,7 +108,6 @@ public class PlayerController : MonoBehaviour
             puntosText.text = puntos.ToString();
             puntosFinalGO.text = puntos.ToString();
             puntosFinalWin.text = puntos.ToString();
-
         }
     }
 
@@ -112,5 +115,4 @@ public class PlayerController : MonoBehaviour
     {
         return puntos;
     }
-
 }
