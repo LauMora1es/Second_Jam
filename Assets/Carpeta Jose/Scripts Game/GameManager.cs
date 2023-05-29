@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("Juego UI-002");
+        SceneManager.LoadScene("Juego 002");
         //Time.timeScale = 1f;
     }
 

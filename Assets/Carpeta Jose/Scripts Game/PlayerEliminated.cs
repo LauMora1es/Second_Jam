@@ -11,6 +11,8 @@ public class PlayerEliminated : MonoBehaviour
     Si los límites del objeto están fuera de los planos del frustum de la cámara, 
     se considera que el objeto está completamente fuera de la vista de la cámara.
      */
+    //Detener la camara
+    private CameraController cameraController;
 
     private Camera cammain;
 
@@ -19,6 +21,8 @@ public class PlayerEliminated : MonoBehaviour
     private void Start()
     {
         cammain = Camera.main;
+        //Detener la camara
+        cameraController = FindObjectOfType<CameraController>();
     }
     private void Update()
     {
@@ -26,6 +30,8 @@ public class PlayerEliminated : MonoBehaviour
         {
             Destroy(gameObject);
             elinimatedCanvas.SetActive(true);
+            //Detener la camara
+            cameraController.speed = 0f;
         }
     }
     private bool IsVisibleFromCamera()
@@ -39,6 +45,4 @@ public class PlayerEliminated : MonoBehaviour
         }
         return false;
     }
-
-
 }

@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         //Para el canvas Score:
         if (other.gameObject.CompareTag("CollectableOre"))
         {
-            sonidoJugador.PlayOneShot(sonidoOro, 6.0f);
+            sonidoJugador.PlayOneShot(sonidoOro, 2.0f);
             Destroy(other.gameObject);
             puntos++;
             puntosText.text = puntos.ToString();
