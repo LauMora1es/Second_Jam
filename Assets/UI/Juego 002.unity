@@ -13975,7 +13975,7 @@ GameObject:
   - component: {fileID: 1840113690}
   - component: {fileID: 1840113689}
   m_Layer: 5
-  m_Name: PointsTotalEnd
+  m_Name: PointsTotalEnd03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15574,7 +15574,9 @@ MonoBehaviour:
   fuerzaSalto: 3.5
   puntosText: {fileID: 5316022453038300013}
   puntosFinalGO: {fileID: 4269833289886615103}
-  puntosFinalWin: {fileID: 4269833290462925327}
+  puntosFinalWin01: {fileID: 4269833290462925327}
+  puntosFinalWin02: {fileID: 2083217620}
+  puntosFinalWin03: {fileID: 1840113689}
 --- !u!95 &1978719500
 Animator:
   serializedVersion: 5
@@ -16852,7 +16854,7 @@ GameObject:
   - component: {fileID: 2083217621}
   - component: {fileID: 2083217620}
   m_Layer: 5
-  m_Name: PointsTotalEnd
+  m_Name: PointsTotalEnd02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21481,7 +21483,7 @@ GameObject:
   - component: {fileID: 4269833290462925324}
   - component: {fileID: 4269833290462925327}
   m_Layer: 5
-  m_Name: PointsTotalEnd
+  m_Name: PointsTotalEnd01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
