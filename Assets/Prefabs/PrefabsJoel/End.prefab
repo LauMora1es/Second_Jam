@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6226846639903073532}
   - component: {fileID: 2900008797965536666}
   - component: {fileID: 1113385912324127104}
+  - component: {fileID: 464821001}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893504393568756011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -7.3, z: 0}
+  m_LocalPosition: {x: 0.8, y: -4.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6137,7 +6138,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!66 &1113385912324127104
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -6148,7 +6149,7 @@ CompositeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6186,6 +6187,22 @@ CompositeCollider2D:
       - {x: -11.24497, y: -7.4300003}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!114 &464821001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893504393568756011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b766e9a83dc1f41a16e6621194dba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winCanvas01: {fileID: 0}
+  winCanvas02: {fileID: 0}
+  winCanvas03: {fileID: 0}
+  cameraControllerObject: {fileID: 0}
 --- !u!1 &8578185797137630479
 GameObject:
   m_ObjectHideFlags: 0
