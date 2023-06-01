@@ -25,11 +25,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
-
+    public void mainMenu()
+    {
+        SceneManager.LoadScene("Juego 001");
+    }
     public void startGame()
     {
         SceneManager.LoadScene("Juego 002");
-        //Time.timeScale = 1f;
+    }
+    public void startTutorial()
+    {
+        SceneManager.LoadScene("IntroScene");
     }
 
     private void TogglePause()
