@@ -15609,6 +15609,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac7e1217d6867e443bf09ec582b07993, type: 3}
+--- !u!1001 &1661919222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45213336
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062709, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091848090692062710, guid: a248467601e5fa2448dae76caa596eed, type: 3}
+      propertyPath: m_Name
+      value: mineralesApiladosV1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a248467601e5fa2448dae76caa596eed, type: 3}
 --- !u!1 &1676923396 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1487328079055036646, guid: ac7e1217d6867e443bf09ec582b07993, type: 3}
