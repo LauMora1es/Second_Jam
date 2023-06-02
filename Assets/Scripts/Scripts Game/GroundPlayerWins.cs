@@ -21,7 +21,6 @@ public class GroundPlayerWins : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
             points = FindObjectOfType<PlayerController>();
             cameraController.speed = 0f;
             Debug.Log(points.getPoints());
