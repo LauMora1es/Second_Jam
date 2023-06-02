@@ -28,10 +28,9 @@ public class GroundPlayerWins : MonoBehaviour
             {
                 winCanvas01.SetActive(true);
             }
-            else if (points.getPoints() > 10 && points.getPoints() <= 13)
+            else if (points.getPoints() >= 10 && points.getPoints() <= 13)
             {
                 winCanvas02.SetActive(true);
-                Debug.Log("Si llegó");
             }
             else if (points.getPoints() > 16 /* && points.getPoints() <= 16 */)
             {
