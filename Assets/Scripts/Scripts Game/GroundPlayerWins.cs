@@ -25,16 +25,16 @@ public class GroundPlayerWins : MonoBehaviour
             points = FindObjectOfType<PlayerController>();
             cameraController.speed = 0f;
             Debug.Log(points.getPoints());
-            if (points.getPoints() <= 5)
+            if (points.getPoints() <= 9)
             {
                 winCanvas01.SetActive(true);
             }
-            else if (points.getPoints() > 5 && points.getPoints() <= 12)
+            else if (points.getPoints() > 10 && points.getPoints() <= 13)
             {
                 winCanvas02.SetActive(true);
                 Debug.Log("Si llegó");
             }
-            else if (points.getPoints() > 12 /* && points.getPoints() <= 16 */)
+            else if (points.getPoints() > 16 /* && points.getPoints() <= 16 */)
             {
                 winCanvas03.SetActive(true);
             }
