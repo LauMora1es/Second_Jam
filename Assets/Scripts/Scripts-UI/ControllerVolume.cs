@@ -12,7 +12,7 @@ public class ControllerVolume : MonoBehaviour
 
     private void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("volumenAudio", 0.3f); //Cambiar aqui en donde iniciara el sonido(modificar el 0.3)
+        slider.value = PlayerPrefs.GetFloat("volumenAudio", 0.1f); //Cambiar aqui en donde iniciara el sonido(modificar el 0.3)
         AudioListener.volume = slider.value;
         ifMute();
     }
